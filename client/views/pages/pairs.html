@@ -1,0 +1,41 @@
+<template name="pairs">
+  <h2>
+    Pairs
+    <span class="badge">{{numberOfPairs}}</span>
+  </h2>
+  {{#if currentUser}}
+    <div class="btn-group btn-group-justified" role="group">
+      {{>randomPairsButton}}
+      {{>savePairsButton}}
+      {{>clearPairsButton}}
+    </div>
+  {{/if}}
+  <div class="btn-group btn-group-justified" role="group">
+    {{#if currentUser}}
+      {{>viewPeopleButton}}
+      {{>toggleSkillsButton}}
+      {{>fullscreenButton}}
+    {{else}}
+      {{>addYourselfButton}}
+      {{>searchYourselfButton}}
+      {{>fullscreenButton}}
+    {{/if}}
+  </div>
+
+  {{#each pairs}}
+    {{>pairCard}}
+  {{/each}}
+
+  <h2>
+    Unpaired
+    <span class="badge">{{numberOfUnpaired}}</span>
+  </h2>
+
+  <div class="row">
+    {{#each unpaired}}
+      <div class="col-md-4">
+        {{>person}}
+      </div>
+    {{/each}}
+  </div>
+</template>

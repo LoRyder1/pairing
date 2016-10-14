@@ -1,0 +1,20 @@
+<template name="pairCard">
+  <div class="row">
+    {{#with firstPerson}}
+      <div class="{{#if currentUser}} col-md-5 {{else}} col-md-6 {{/if}}{{#if ../alreadyPaired}} already-paired {{/if}}">
+	{{>person}}
+      </div>
+    {{/with}}
+    {{#with secondPerson}}
+      <div class="{{#if currentUser}} col-md-5 {{else}} col-md-6 {{/if}}{{#if ../alreadyPaired}} already-paired {{/if}}">
+	{{>person}}
+      </div>
+    {{/with}}
+
+
+    {{#if currentUser}}
+      {{>removePairButton}}
+    {{else}}
+    {{/if}}
+  </div>
+</template>

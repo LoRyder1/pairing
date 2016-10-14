@@ -1,0 +1,13 @@
+<template name="fullscreen">
+  <br>
+  {{>paircards}}
+
+  <br>
+  <br>
+  {{#each unpaired}}
+    <div class="col-md-2">{{>zoom}}</div>
+  {{/each}}
+  <br>
+  <br>
+  {{>returnFromFullscreenButton}}
+</template>

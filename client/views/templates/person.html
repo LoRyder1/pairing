@@ -1,0 +1,38 @@
+<template name="person">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <img class="img-rounded" src="{{avatarFor email}}">
+      <b>{{name}}</b>
+      <form class="form-inline pull-right">
+        {{#if isPairsPage}}
+          {{#if currentUser}}
+            <select class="form-control">
+              <option value="new pair">new pair</option>
+              {{#each unpaired}}
+                {{#if notequals this._id ../_id}}
+                  <option value={{this._id}}>{{this.name}}</option>
+                {{/if}}
+              {{/each}}
+            </select>
+          {{else}}
+          {{/if}}
+        {{/if}}
+        {{#if isPeoplePage}}
+          {{#if joined}}
+            <button type="button" class="btn btn-primary btn-xs unjoin-one">here</button>
+          {{else}}
+            <button type="button" class="btn btn-primary btn-xs join-one">away</button>
+          {{/if}}
+          <button type="button" class="btn btn-primary btn-xs delete-one">x</button>
+        {{/if}}
+      </form>
+      {{> experience}}
+    </div>
+
+    {{#if showSkills}}
+      {{>skills}}
+    {{/if}}
+
+
+  </div>
+</template>
