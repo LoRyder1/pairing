@@ -25,5 +25,7 @@ To add people, go the People pag, To start and manage pairings, go to the Pairs 
   - select who to pair with
   - remove person from pair
 
-
+#Installation and running
+1. Install Meteor
+2. Run `meteor`
 
