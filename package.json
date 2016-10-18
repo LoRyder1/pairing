@@ -7,5 +7,19 @@
   "dependencies": {
     "bcrypt": "^0.8.7",
     "meteor-node-stubs": "~0.2.0"
-  }
+  },
+  "description": "Find other people to pair with based on shared interests and skills",
+  "version": "1.0.0",
+  "main": "layout.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LoRyder1/pairing.git"
+  },
+  "author": "lpnag",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LoRyder1/pairing/issues"
+  },
+  "homepage": "https://github.com/LoRyder1/pairing"
 }
