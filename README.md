@@ -29,3 +29,6 @@ To add people, go the People pag, To start and manage pairings, go to the Pairs 
 1. Install Meteor
 2. Run `meteor`
 
+#Deployment
+1. use this heroku buildpack
+  `test`
