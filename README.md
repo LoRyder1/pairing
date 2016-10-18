@@ -20,5 +20,10 @@ To add people, go the People pag, To start and manage pairings, go to the Pairs 
   - save paris - save paris (records who paired with whom)
   - fullscreen - displays all pairs on one screen, good for projectors
 
+##Person
+
+  - select who to pair with
+  - remove person from pair
+
 
 
