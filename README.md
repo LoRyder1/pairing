@@ -14,4 +14,11 @@ To add people, go the People pag, To start and manage pairings, go to the Pairs 
     - for testing
   - delete a person
 
-##
+##Pairs Page
+  - generate pairs - generates pairs randomly, from unpaired people
+  - clear pairs - all pairs become unpaired
+  - save paris - save paris (records who paired with whom)
+  - fullscreen - displays all pairs on one screen, good for projectors
+
+
+
