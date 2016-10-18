@@ -31,4 +31,11 @@ To add people, go the People pag, To start and manage pairings, go to the Pairs 
 
 #Deployment
 1. use this heroku buildpack
+
   `test`
+
+What is a buildpack? - It's a collection of scripts that prepares your code for execution by the Heroku dyno manager. Heroku's cedar stack has no default language/framework support, so we use a buildpack to determine/specify what kind of framework we wanted to build on. 
+
+`https://github.com/jordansissel/heroku-buildpack-meteor.git`
+
+What is cedar then? It's a polyglot environment, which means it has native support for many popular languages and frameworks. 
